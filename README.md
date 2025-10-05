@@ -30,4 +30,4 @@ Verificación de permisos: solo usuarios con rol “Administrador” pueden inco
 - Juan Diego Martinez 20231020131
 - Luis Felipe Suarez 20231020033
 - Carlos Brito 20241020147
-- Ivan Lopez 
+- Ivan Lopez 20232020113
