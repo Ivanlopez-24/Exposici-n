@@ -1,3 +1,5 @@
+package main.java;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -22,9 +24,15 @@ public class prueba {
         System.out.println("--- Ejecutivo (Markdown) ---");
         System.out.println(ejecutivo.export());
 
-        // La structura seria pues el report que tiene la abstracción
+        // La estructura seria pues el report que tiene la abstracción
    // Las clases concretas de eso ya serían el detallado y el ejecutivo
    // exporter pues el implementor con el HTML y el markdown
+        ReportContent basic = new ConcreteReport();
+        ReportContent withHeader = new HeaderDecorator(basic);
+        ReportContent fullReport = new FooterDecorator(withHeader);
+
+        fullReport.execute();
+   
 
     }
 }
