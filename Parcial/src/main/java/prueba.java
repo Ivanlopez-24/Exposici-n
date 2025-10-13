@@ -32,6 +32,19 @@ public class prueba {
         ReportContent fullReport = new FooterDecorator(withHeader);
 
         fullReport.execute();
+
+        TextContext context1 = new TextContext("Arial", 12, "Negro", "Reporte Ejecutivo");
+        context1.operation();
+        TextContext context2 = new TextContext("Arial", 12, "Negro", "Reporte Financiero");
+        context2.operation();
+        TextContext context3 = new TextContext("Times New Roman", 14, "Azul", "Reporte Detallado");
+
+        context3.operation();
+
+
+
+
+
    
 
     }
